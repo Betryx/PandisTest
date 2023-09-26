@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" class="sl-theme-dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.7/dist/full.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.8.0/cdn/themes/dark.css" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.8.0/cdn/shoelace.js" ></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>contact Us</title>
+</head>
+<body>
+  <div class="navbar bg-base-100 bg-primary">
+    <div class="navbar-start">
+      <a href="Landing.html" class="d-navbar-brand">
+          <img src="https://cdn.discordapp.com/attachments/1018200397971734638/1156136575969800233/panda.png?ex=6513df97&is=65128e17&hm=76f986893a2dc0eb087b97d216aded244e44b0567db4be01377ce87b3145ad76&" alt="Your Logo" class="h-10">
+      </a>
+      <div class="dropdown">
+        <label tabindex="0" class="btn btn-ghost lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+        </label>
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+          <li><a href="/about">За нас</a></li>
+          <li><a href="/contact">Контакти</a></li>
+          <li><a href="/careers">Кaриери</a></li>
+      
+        </ul>
+      </div>
+      <a class="btn btn-ghost normal-case text-xl text-white" href=Landing.html>Pandis</a>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1">
+        <li><a class="text-xl text-white" href="/about">За нас</a></li>
+        <li><a class="text-xl text-white" href="/contact"><h2>Контакт</h2></a></li>
+        <li><a class="text-xl text-white" href="/careers"><h2>Кариери</h2></a></li>
+      </ul>
+    </div>
+    <div class="navbar-end">
+      
+    </div>
+  </div>
+      <div class=" min-h-screen flex items-center justify-center">
+        <div class="max-w-xl w-full bg-black shadow-md rounded p-6">
+          <h1 class="text-3xl font-bold mb-4  text-white">Искаш да се свържеш с нас?</h1>
+          <p class="text-gray-700 mb-6 text-white">Свържи се с нас използвайки формата.</p>
+            <div class="mb-4">
+              <label class=" text-white block text-gray-700 text-sm font-bold mb-2" for="email">
+                Имейл:
+              </label>
+              <input
+                class=" text-white shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="email" type="email" placeholder="Имейл">
+            </div>
+            <div class="mb-6">
+              <label class=" text-white block text-gray-700 text-sm font-bold mb-2" for="message">
+                Съобщение:
+              </label>
+              <textarea
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="message" placeholder="Съобщение"></textarea>
+            </div>
+            <div class="flex items-center justify-between">
+              <button
+                class="btn btn-primary" id="test">
+                Изпрати
+              </button>
+            </div>
+        </div>
+      </div>
+      <footer class="footer footer-center p-4 bg-base-300 text-base-content">
+        <aside>
+          <p>Pandis 2023</p>
+          <p>Всички права запазени</p>
+        </aside>
+      </footer>
+      <sl-alert variant="primary" id="alery" duration="2000" closable>
+        <sl-icon slot="icon" name="info-circle"></sl-icon>
+        <strong>Успех</strong><br />
+        Съобщението беше изпратено успешно
+    </sl-alert>
+    <script>
+        
+        const a = document.getElementById('alery')
+        const b = document.getElementById('test')
+        b.addEventListener('click', ()=>{a.toast()})
+        document.preventDefault();
+        
+
+        
+    </script>
+
+
+
+    <link rel="stylesheet" href="/shoelace/dist/themes/dark.css" />
+    <script type="module" src="/shoelace/dist/shoelace.js"></script>
+
+</body>
+</html>
